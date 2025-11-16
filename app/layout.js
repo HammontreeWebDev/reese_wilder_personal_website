@@ -1,6 +1,6 @@
 import { Trade_Winds, Montserrat } from "next/font/google";
 import "./globals.css";
-import Nav from "./ui/common/Nav";
+import Footer from "./ui/common/Footer";
 
 const tradeWinds = Trade_Winds({
   variable: "--font-trade-winds",
@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${tradeWinds.variable} ${montserrat.variable} antialiased`}
       >
-        {/* <Nav /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
