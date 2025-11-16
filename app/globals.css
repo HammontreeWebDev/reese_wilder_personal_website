@@ -24,23 +24,3 @@
 body {
   font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
 }
-
-/* Background colors */
-
-.bg-steel-white {
-  background-color: var(--steel-white);
-}
-
-.bg-matte-black {
-  background-color: var(--matte-black);
-}
-
-/* Text Colors */
-
-.text-steel-white {
-  color: var(--steel-white);
-}
-
-.text-matte-black {
-  color: var(--matte-black);
-}
