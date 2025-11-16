@@ -18,12 +18,12 @@ export default function Nav() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="bg-white dark:bg-gray-900">
+        <header className="bg-steel-white">
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                 <div className="flex flex-1">
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-matte-black">
                                 {item.name}
                             </a>
                         ))}
@@ -32,7 +32,7 @@ export default function Nav() {
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(true)}
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400 dark:hover:text-white"
+                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-matte-black"
                         >
                             <span className="sr-only">Open main menu</span>
                             <Bars3Icon aria-hidden="true" className="size-6" />
@@ -41,11 +41,11 @@ export default function Nav() {
                 </div>
                 <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Reese Wilder</span>
-                    <p>Reese Wilder</p>
+                    <p className="trade-winds-regular">Reese Wilder</p>
                 </a>
                 <div className="hidden lg:flex lg:gap-x-12 flex flex-1 justify-end">
                     {navigation2.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                        <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-matte-black">
                             {item.name}
                         </a>
                     ))}
@@ -53,13 +53,13 @@ export default function Nav() {
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-10" />
-                <DialogPanel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 dark:bg-gray-900">
+                <DialogPanel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-steel-white px-6 py-6">
                     <div className="flex items-center justify-between">
                         <div className="flex flex-1">
                             <button
                                 type="button"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400 dark:hover:text-white"
+                                className="-m-2.5 rounded-md p-2.5 text-matte-black"
                             >
                                 <span className="sr-only">Close menu</span>
                                 <XMarkIcon aria-hidden="true" className="size-6" />
@@ -67,23 +67,14 @@ export default function Nav() {
                         </div>
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Reese Wilder</span>
-                            <img
-                                alt=""
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                                className="h-8 w-auto dark:hidden"
-                            />
-                            <img
-                                alt=""
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                                className="h-8 w-auto not-dark:hidden"
-                            />
+                            <p>Reese Wilder</p>
                         </a>
                         <div className="flex flex-1 justify-end">
                             {navigation2.map((item) => (
                                 <a
                                     key={item.name}
                                     href={item.href}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-matte-black hover:bg-gray-50"
                                 >
                                     {item.name}
                                 </a>
@@ -95,7 +86,7 @@ export default function Nav() {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
+                                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-matte-black hover:bg-gray-50"
                             >
                                 {item.name}
                             </a>

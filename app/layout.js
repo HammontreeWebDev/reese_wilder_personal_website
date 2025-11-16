@@ -1,15 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Trade_Winds, Montserrat } from "next/font/google";
 import "./globals.css";
 import Nav from "./ui/common/Nav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const tradeWinds = Trade_Winds({
+  variable: "--font-trade-winds",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata = {
@@ -21,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${tradeWinds.variable} ${montserrat.variable} antialiased`}
       >
         <Nav />
         {children}
