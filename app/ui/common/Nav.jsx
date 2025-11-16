@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -15,10 +15,24 @@ const navigation2 = [
 ]
 
 export default function Nav() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <header className="bg-transparent text-[var(--steel-white)] hover:bg-[var(--steel-white)] hover:text-[var(--matte-black)] backdrop-blur-lg transition-all duration-300">
+        <header className={`
+        fixed top-0 left-0 w-full z-50 backdrop-blur-lg transition-all duration-300
+        ${scrolled ? "bg-[var(--steel-white)] text-[var(--matte-black)] shadow-md" : "bg-transparent text-[var(--steel-white)]"}
+        hover:bg-[var(--steel-white)] hover:text-[var(--matte-black)]
+    `}>
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                 <div className="flex flex-1">
                     <div className="hidden lg:flex lg:gap-x-12">
