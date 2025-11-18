@@ -1,11 +1,7 @@
-import Nav from "../../common/Nav";
-
 export default function HomeHeroSection() {
     return (
         <header className="bg-[var(--matte-black)] text-[var(--steel-white)]">
             <div className="relative isolate overflow-hidden min-h-screen">
-                <Nav />
-
                 {/* Background image – subtle texture over matte black */}
                 <img
                     alt=""

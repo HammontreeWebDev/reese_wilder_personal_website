@@ -5,7 +5,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'About', href: '#' },
+    { name: 'About', href: '/About' },
     { name: 'Socials', href: '#' },
 ]
 
@@ -53,7 +53,7 @@ export default function Nav() {
                         </button>
                     </div>
                 </div>
-                <a href="#" className="-m-1.5 p-1.5">
+                <a href="/" className="-m-1.5 p-1.5">
                     <span className="sr-only">Reese Wilder</span>
                     <p className="trade-winds-regular text-2xl">Reese Wilder</p>
                 </a>
@@ -79,7 +79,7 @@ export default function Nav() {
                                 <XMarkIcon aria-hidden="true" className="size-6" />
                             </button>
                         </div>
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Reese Wilder</span>
                             <p>Reese Wilder</p>
                         </a>
