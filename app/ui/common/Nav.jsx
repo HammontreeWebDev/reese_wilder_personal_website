@@ -14,12 +14,20 @@ const navigation = [
       { name: 'FAQ', href: '/about/faq' },
     ],
   },
-  { name: 'Socials', href: '#' },
+  {
+    name: 'Socials',
+    href: '/socials/instagram',
+    children: [
+      { name: 'Instagram', href: '/socials/instagram' },
+      { name: 'YouTube', href: '/socials/youtube' },
+      { name: 'TikTok', href: '/socials/tiktok' },
+    ],
+  },
 ]
 
 const navigation2 = [
-  { name: 'Connect', href: '#' },
-  { name: 'Podcast', href: '#' },
+  { name: 'Connect', href: '/connect' },
+  { name: 'Podcast', href: '/podcast' },
 ]
 
 export default function Nav() {
@@ -56,7 +64,7 @@ export default function Nav() {
           <div className="hidden lg:flex lg:gap-x-12 items-center">
             {navigation.map((item) =>
               item.children ? (
-                // ABOUT DROPDOWN
+                // DROPDOWN
                 <div key={item.name} className="relative group">
                   <a
                     href={item.href}
