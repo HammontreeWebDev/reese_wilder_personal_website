@@ -1,4 +1,5 @@
 import SocialSection from "@/app/ui/common/SocialSection"
+import InstagramIcon from "@/app/ui/icons/InstagramIcon"
 
 export default function InstagramPage() {
   return (
@@ -22,6 +23,7 @@ export default function InstagramPage() {
           Featured Instagram post embed goes here — for example, a Reel teaser for a new podcast episode.
         </div>
       }
+      Icon={InstagramIcon}
     />
   )
 }

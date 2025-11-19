@@ -16,7 +16,7 @@ export default function SocialSection({
         <aside className="sticky top-24 hidden w-44 shrink-0 lg:block">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[var(--electric-violet)] to-[var(--neon-coral)]">
+              
                 {Icon ? (
                   <Icon className="h-6 w-6 text-[var(--steel-white)]" aria-hidden="true" />
                 ) : (
@@ -24,7 +24,7 @@ export default function SocialSection({
                     {platformName?.[0] ?? "R"}
                   </span>
                 )}
-              </div>
+              
               <div>
                 <p className="text-[0.65rem] uppercase tracking-[0.14em] text-[var(--soft-lilac)]/80">
                   Reese on {platformName}

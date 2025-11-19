@@ -1,4 +1,5 @@
-import SocialSection from "@/app/ui/common/SocialSection"
+import SocialSection from "@/app/ui/common/SocialSection";
+import YouTubeIcon from "@/app/ui/icons/YouTube";
 
 export default function YouTubePage() {
   return (
@@ -22,6 +23,7 @@ export default function YouTubePage() {
           Featured YouTube video embed goes here — for example, a trailer or a highlight from an upcoming episode.
         </div>
       }
+      Icon={YouTubeIcon}
     />
   )
 }

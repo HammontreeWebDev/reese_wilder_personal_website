@@ -1,4 +1,5 @@
-import SocialSection from "@/app/ui/common/SocialSection"
+import SocialSection from "@/app/ui/common/SocialSection";
+import TikTokIcon from "@/app/ui/icons/TikTok";
 
 export default function TikTokPage() {
   return (
@@ -22,6 +23,7 @@ export default function TikTokPage() {
           Featured TikTok embed goes here — for example, a clip from a favorite podcast moment.
         </div>
       }
+      Icon={TikTokIcon}
     />
   )
 }
