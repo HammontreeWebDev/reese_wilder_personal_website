@@ -10,7 +10,7 @@ export default function SocialSection({
   featuredPostEmbed,  // React node with iframe / blockquote / etc.
 }) {
   return (
-    <div className="flex min-h-full flex-col bg-[var(--matte-black)] text-[var(--steel-white)]">
+    <div className="flex min-h-screen flex-col bg-[var(--matte-black)] text-[var(--steel-white)] pt-25">
       <div className="mx-auto flex w-full max-w-7xl items-start gap-x-8 px-4 py-24 sm:px-6 lg:px-8">
         {/* LEFT COLUMN – Platform summary / quick links */}
         <aside className="sticky top-24 hidden w-44 shrink-0 lg:block">

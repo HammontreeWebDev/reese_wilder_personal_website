@@ -1,6 +1,6 @@
 export default function HomeHeroSection() {
     return (
-        <header className="bg-[var(--matte-black)] text-[var(--steel-white)]">
+        <div className="bg-[var(--matte-black)] text-[var(--steel-white)]">
             <div className="relative isolate overflow-hidden min-h-screen">
                 {/* Background image – subtle texture over matte black */}
                 <img
@@ -86,6 +86,6 @@ export default function HomeHeroSection() {
                     />
                 </div>
             </div>
-        </header>
+        </div>
     );
 }
