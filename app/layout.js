@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${tradeWinds.variable} ${montserrat.variable} antialiased`}
+        className={`${tradeWinds.variable} ${montserrat.variable} antialiased max-w-screen`}
       >
         <Nav />
         {children}
